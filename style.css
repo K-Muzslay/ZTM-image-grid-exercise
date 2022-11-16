@@ -1,0 +1,101 @@
+* Box sizing rules */ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #110729;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a,
+li {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-size: 1.5rem;
+  color: rgb(225, 239, 245);
+  padding: 1.5rem;
+}
+.nav-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+.contact {
+  justify-self: end;
+}
+.hero {
+  background: url(img/webdevdark.jpg) no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+.projects {
+  width: 80vw;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a25a1;
+  grid-template-rows: min(35vw, 25rem);
+  padding: min(3vw, 2rem);
+  border-radius: 0.5rem;
+  border: 1px solid white;
+}
+footer {
+  height: 10vh;
+  background-color: #ffb700;
+}
