@@ -1,4 +1,5 @@
-* Box sizing rules */ *,
+/* Box sizing rules */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -50,6 +51,9 @@ li {
   font: inherit;
   color: inherit;
 }
+a:hover {
+  color: #ffb700;
+}
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -96,7 +100,14 @@ li:last-child {
   grid-template-rows: min(35vw, 25rem);
   padding: min(3vw, 2rem);
   border-radius: 0.5rem;
-  border: 1px solid white;
+  border: 1px solid #29f193;
+  animation: fadeInDown;
+  animation-duration: 1.5s;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #663dc4;
+  box-shadow: 1px 1px 1px 1px #29f193;
 }
 footer {
   height: 10vh;
